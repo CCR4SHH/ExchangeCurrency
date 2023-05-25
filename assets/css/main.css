@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -35,7 +36,6 @@ body section .content .markets {
 body section .content .markets .column {
   flex: 50%;
   width: 352px;
-  min-height: 200px;
 }
 body section .content .markets .column:first-child {
   margin-right: 75px;
@@ -171,7 +171,7 @@ body section .btn-group .buttons {
   display: flex;
 }
 body section .btn-group .buttons .btn-info {
-  width: 352px;
+  width: 350px;
   height: 48px;
   margin-right: 75px;
   background-color: #2b3b48;
@@ -186,15 +186,94 @@ body section .btn-group .buttons .btn-info {
 body section .btn-group .buttons .btn-all {
   width: 350px;
   height: 48px;
+  color: #2b3b48;
   border: 2px solid #4f6477;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+body section .btn-group .buttons .btn-all .mobile {
+  display: none;
+}
 
-@media screen and (max-width: 375px) {
-  section {
+@media screen and (max-width: 500px) {
+  body section {
     width: 375px;
+    padding: 9px 15px 27px 12px;
     height: auto;
+  }
+  body section .con-header {
+    color: #2b3b48;
+    width: 348px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2.45;
+    letter-spacing: -0.49px;
+    margin-top: 0;
+  }
+  body section .content {
+    margin-top: 0;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  body section .content .markets {
+    width: 348px;
+    margin-right: 0;
+    flex-direction: column;
+  }
+  body section .content .markets .column {
+    flex: auto;
+    width: 348px;
+  }
+  body section .content .markets .column:first-child {
+    margin-right: 0;
+    border-bottom: 1px solid #e6ecf0;
+    margin-bottom: 10px;
+  }
+  body section .content .exchange {
+    width: 345px;
+    height: 288px;
+    padding: 21px 24px 24px;
+    background: linear-gradient(154deg, #2b3b48 32%, #8093a5 115%);
+  }
+  body section .content .exchange #curexc {
+    width: 297px;
+    height: 48px;
+    box-sizing: border-box;
+    border: none;
+    border-right: 1px solid #eaeef2;
+    outline: none;
+    padding: 15px 0 15px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #2b3b48;
+  }
+  body section .content .exchange .excbutton {
+    margin: 19px 124px 19px 124px;
+  }
+  body section .content .exchange .excresult {
+    width: 297px;
+  }
+  body section .btn-group {
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  body section .btn-group .buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+  body section .btn-group .buttons .btn-info {
+    width: 100%;
+    margin-right: 0;
+  }
+  body section .btn-group .buttons .btn-all {
+    border: none;
+  }
+  body section .btn-group .buttons .btn-all .mobile {
+    display: inline-block;
+    padding-left: 5px;
   }
 }/*# sourceMappingURL=main.css.map */
