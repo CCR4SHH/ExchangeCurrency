@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagiClick</title>
+
+    <script src="assets/js/vendor/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <section>
+        <div class="con-header">Piyasalar</div>
+        <div class="content">
+            <div class="markets">
+                <div class="column">
+                    <div class="currency" id="USD">
+                        <img src="assets/images/usd.png" alt="">
+                        <div class="cur-name">
+                            <span class="code">USD</span>
+                            <span class="name">Amerikan Doları</span>
+                        </div>
+                        <div class="cur-buy">
+                            <span class="buy-sell">ALIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                        <div class="cur-sell">
+                            <span class="buy-sell">SATIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                    </div>
+asd
+                    <hr class="path"/>
+
+                    <div class="currency" id="JPY">
+                        <div class="bitmap"> 
+                            <img src="assets/images/jpy.png" alt="">
+                        </div>
+                        <div class="cur-name">
+                            <span class="code">JPY</span>
+                            <span class="name">Japon Yeni</span>
+                        </div>
+                        <div class="cur-buy">
+                            <span class="buy-sell">ALIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                        <div class="cur-sell">
+                            <span class="buy-sell">SATIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                    </div>
+                    
+                    <hr class="path"/>
+
+                    <div class="currency" id="DKK">
+                        <img src="assets/images/dkk.png" alt="">
+                        <div class="cur-name">
+                            <span class="code">DKK</span>
+                            <span class="name">Danimarka Kronu</span>
+                        </div>
+                        <div class="cur-buy">
+                            <span class="buy-sell">ALIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                        <div class="cur-sell">
+                            <span class="buy-sell">SATIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="currency" id="EUR">
+                        <img src="assets/images/eur.png" alt="">
+                        <div class="cur-name">
+                            <span class="code">EUR</span>
+                            <span class="name">Avrupa Para Birimi</span>
+                        </div>
+                        <div class="cur-buy">
+                            <span class="buy-sell">ALIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                        <div class="cur-sell">
+                            <span class="buy-sell">SATIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                    </div>
+
+                    <hr class="path"/>
+
+                    <div class="currency" id="GBP">
+                        <div class="bitmap"> 
+                            <img src="assets/images/gbp.png" alt="">
+                        </div>
+                        <div class="cur-name">
+                            <span class="code">GBP</span>
+                            <span class="name">İngiliz Sterlini</span>
+                        </div>
+                        <div class="cur-buy">
+                            <span class="buy-sell">ALIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                        <div class="cur-sell">
+                            <span class="buy-sell">SATIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                    </div>
+                    
+                    <hr class="path"/>
+
+                    <div class="currency" id="NOK">
+                        <img src="assets/images/nok.png" alt="">
+                        <div class="cur-name">
+                            <span class="code">NOK</span>
+                            <span class="name">Norveç Kronu</span>
+                        </div>
+                        <div class="cur-buy">
+                            <span class="buy-sell">ALIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                        <div class="cur-sell">
+                            <span class="buy-sell">SATIŞ</span>
+                            <span class="cur-value"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange">
+                <p class="title">Döviz Çevir</p>
+
+                <div class="input-group">
+                    <input type="text" id="curexc">
+                    <select id="curtype">
+                        <option value="USD">USD</option>
+                        <option value="JPY">JPY</option>
+                        <option value="DKK">DKK</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="NOK">NOK</option>
+                    </select>
+                </div>
+
+                <img src="assets/images/buttons-change.png" class="excbutton"/>
+
+                <div class="excresult">
+                    <p class="excvalue"><span>TL</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <div class="buttons">
+                <div class="btn-info">Detaylı Bilgi</div>
+                <div class="btn-all">Tüm Piyasalar</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

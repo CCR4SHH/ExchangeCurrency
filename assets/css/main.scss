@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin textflex(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$text-color: #2b3b48;
+$soft-color: #4f6477;
+$white-text: #ffffff;
+$input-border: #eaeef2;
+$path: #bac9d5;
+
+$font: Roboto;
+
+body{
+    font-family: $font;
+
+    section{
+        width: 1440px;
+        height: 520px;
+        margin: 0 auto;
+        
+        .con-header{
+            color: $text-color;
+            width: 1110px;
+            margin: 31px auto 0 auto;
+            font-family: $font;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 42px;
+            
+            .markets{
+                width: 775px;
+                height: auto;
+                margin-right: 80px;
+                display: flex;
+
+                .column{
+                    flex: 50%;
+                    width: 352px;
+                    min-height: 200px;
+                    &:first-child{
+                        margin-right: 75px;
+                    }
+
+                    .currency{
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 0 0 25px 0;
+                        
+                        span{
+                            display: block;
+                        }
+
+                        .bitmap{
+                            width: 43px;
+                            height: 29px;
+                        }
+                        .cur-name{
+                            margin-left: 15px;
+                            width: 120px;
+                        }
+                        .cur-buy{
+                            width: 74px;
+                            text-align: right;
+                        }
+                        .cur-sell{
+                            width: 99px;
+                            text-align: right;
+                        }
+
+                        .code{
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 1.25;
+                            color: $text-color;
+                        }
+                        .name{
+                            margin-top: 1px;
+                            font-size: 12px;
+                            line-height: 2;
+                            color: $text-color;
+                        }
+                        .buy-sell{
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: $soft-color;
+                        }
+                        .cur-value{
+                            margin-top: 6px;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            color: $text-color;
+                        }
+                    }
+
+                    .path{
+                        width: 351px;
+                        height: 1px;
+                        color: $path;
+                        opacity: 0.3;
+                        margin-bottom: 29px;
+                    }
+                }
+            }
+            
+            .exchange{
+                width: 255px;
+                height: 288px;
+                padding: 19px 20px 26px 20px;
+                background: linear-gradient(154deg, #2b3b48 32%, #8093a5 115%);
+
+                .title{
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 1.7;
+                    color: $white-text;
+                    text-align: center;
+                    margin-bottom: 27px;
+                }
+                .input-group{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                #curexc{
+                    width: 129px;
+                    height: 48px;
+                    box-sizing: border-box;
+                    border: none;
+                    border-right: 1px solid $input-border;
+                    outline: none;
+                    padding: 15px 0 15px 15px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 1.25;
+                    color: $text-color;
+                }
+                #curtype{
+                    width: 86px;
+                    height: 48px;
+                    border: none;
+                    border-radius: 0;
+                    background-color: $white-text;
+                    border-right: 15px solid $white-text;
+                    padding-left: 14px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 1.25;
+                    color: $text-color;
+                }
+
+                .excbutton{
+                    margin: 19px 83px 19px 84px;
+                }
+
+                .excresult{
+                    width: 215px;
+                    height: 48px;
+                    background-color: $white-text;
+                    
+                    position: relative;
+                    padding: 15px 16px 9px 15px;
+                    color: $text-color;
+                    
+                    .excvalue{
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 1.25;
+
+                        span{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-group{
+            width: 1110px;
+            height: auto;
+            margin: 2px auto 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .buttons{
+                width: 780px;
+                display: flex;
+
+                .btn-info{
+                    width: 352px;
+                    height: 48px;
+                    margin-right: 75px;
+                    background-color: $text-color;
+                    font-size: 15px;
+                    font-weight: bold;
+                    letter-spacing: 0.94px;
+                    color: $white-text;
+                    @include textflex(); 
+                }
+
+                .btn-all{
+                    width: 350px;
+                    height: 48px;
+                    border: 2px solid $soft-color;
+                    @include textflex(); 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    section {
+      width: 375px;
+      height: auto;
+    }
+}
