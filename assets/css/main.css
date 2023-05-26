@@ -200,6 +200,7 @@ body section .btn-group .buttons .btn-all .mobile {
 }
 body section #allcurrency .currency {
   margin-top: 20px;
+  width: 350px;
   border-bottom: 1px solid #bac9d5;
 }
 body section #allcurrency .currency img {
