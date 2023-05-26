@@ -188,12 +188,30 @@ body section .btn-group .buttons .btn-all {
   height: 48px;
   color: #2b3b48;
   border: 2px solid #4f6477;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.94px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 body section .btn-group .buttons .btn-all .mobile {
   display: none;
+}
+body section #allcurrency .currency {
+  margin-top: 20px;
+  border-bottom: 1px solid #bac9d5;
+}
+body section #allcurrency .currency img {
+  width: 43px;
+  height: 30px;
+  background: url("../images/flags/UNKNOWN.png");
+  background-position: center;
+  background-size: contain;
+}
+body section #allcurrency .exchange {
+  height: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -204,7 +222,7 @@ body section .btn-group .buttons .btn-all .mobile {
   }
   body section .con-header {
     color: #2b3b48;
-    width: 348px;
+    width: 100%;
     font-size: 22px;
     font-weight: 500;
     line-height: 2.45;
@@ -224,16 +242,24 @@ body section .btn-group .buttons .btn-all .mobile {
   body section .content .markets .column {
     flex: auto;
     width: 348px;
+    margin-top: 16px;
   }
   body section .content .markets .column:first-child {
     margin-right: 0;
-    border-bottom: 1px solid #e6ecf0;
+    border-bottom: 2px solid #e6ecf0;
     margin-bottom: 10px;
+  }
+  body section .content .markets .column .path {
+    margin-bottom: 20px;
+  }
+  body section .content .markets .column .currency {
+    padding-bottom: 20px;
   }
   body section .content .exchange {
     width: 345px;
-    height: 288px;
+    height: auto;
     padding: 21px 24px 24px;
+    margin-top: 13px;
     background: linear-gradient(154deg, #2b3b48 32%, #8093a5 115%);
   }
   body section .content .exchange #curexc {
@@ -257,7 +283,7 @@ body section .btn-group .buttons .btn-all .mobile {
   }
   body section .btn-group {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 26px;
     justify-content: center;
   }
   body section .btn-group .buttons {
@@ -271,6 +297,8 @@ body section .btn-group .buttons .btn-all .mobile {
   }
   body section .btn-group .buttons .btn-all {
     border: none;
+    font-weight: 500;
+    letter-spacing: 1;
   }
   body section .btn-group .buttons .btn-all .mobile {
     display: inline-block;
